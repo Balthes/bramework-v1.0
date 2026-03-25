@@ -22,7 +22,7 @@ A Bramework egy **egyedi PHP keretrendszer**, amely a modern webfejlesztés legj
 
 ### Hogyan működik a gyakorlatban?
 
-1.  **Tiszta URL-ek:** Felejtsd el a csúnya `index.php?page=contact` linkeket! A Bramework-kel egyszerűen csak `balthes.hu/kapcsolat` lesz az elérési út.
+1.  **Tiszta URL-ek:** Felejtsd el a csúnya `index.php?page=contact` linkeket! A Bramework-kel egyszerűen csak `domain.com/kapcsolat` lesz az elérési út.
 2.  **Komponens-alapú szemlélet:** A weboldalad elemeit (fejléc, menü, lábléc) egyszer írod meg, és bárhol újrahasználhatod őket.
 3.  **Biztonságos Adatkezelés:** Az adatbázis-kapcsolat nem épül fel feleslegesen többször; a **Singleton** minta biztosítja, hogy a szerver erőforrásaival takarékosan bánjunk, a **PDO** pedig kivédi a rosszindulatú SQL támadásokat.
 4.  **Központosított beállítás:** Minden, ami a környezettől függ (szerver név, jelszavak, alap URL), egyetlen külön mappában (`/config`) lakik. Ez teszi a rendszert "hordozhatóvá": fejlesztés után csak átírod a configot, és már élesítheted is a projektet.
